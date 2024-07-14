@@ -10,11 +10,21 @@
     <div class="container">
         <h1>Morse Code Translator</h1>
         <div class="translator">
-            <textarea id="englishInput" placeholder="Enter English text"></textarea>
-            <button id="toMorseBtn">Translate to Morse Code</button>
-            <textarea id="morseInput" placeholder="Enter Morse Code"></textarea>
-            <button id="toEnglishBtn">Translate to English</button>
-            <div id="result"></div>
+            <div class="translator-item">
+                <textarea id="englishInput" placeholder="Enter English text"></textarea>
+                <button id="toMorseBtn">Translate to Morse Code</button>
+            </div>
+            <div class="translator-item">
+                <textarea id="morseInput" placeholder="Enter Morse Code"></textarea>
+                <button id="toEnglishBtn">Translate to English</button>
+            </div>
+        </div>
+        <div id="error" class="error-message"></div>
+        <div class="character-index">
+            <h2>Character Index</h2>
+            <div class="character-grid">
+                <!-- Morse code characters will be added here -->
+            </div>
         </div>
     </div>
     <script type="module" src="./Scripts/script.js"></script>

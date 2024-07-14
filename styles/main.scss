@@ -1,18 +1,30 @@
+// Variables
+$font-stack: Arial, sans-serif;
+$primary-color: #5c7591;
+$primary-hover-color: #0056b3;
+$background-color: #f9f8fa;
+$container-background-color: rgb(201, 180, 180);
+$container-border-radius: 10px;
+$container-padding: 20px;
+$container-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+$text-color: black;
+$error-color: red;
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: $font-stack;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f9f8fa;
+  background-color: $background-color;
   margin: 0;
 }
 
 .container {
-  background-color: rgb(201, 180, 180);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: $container-background-color;
+  padding: $container-padding;
+  border-radius: $container-border-radius;
+  box-shadow: $container-shadow;
   width: 80%;
   max-width: 1200px;
   overflow: auto;
@@ -47,18 +59,18 @@ button {
   margin-top: 10px;
   padding: 10px;
   border: none;
-  background-color: #5c7591;
+  background-color: $primary-color;
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: $primary-hover-color;
 }
 
 .error-message {
-  color: red;
+  color: $error-color;
   margin-top: 10px;
   text-align: center;
 }
@@ -80,5 +92,3 @@ button:hover {
   padding: 10px;
   border-radius: 5px;
 }
-
-/*# sourceMappingURL=main.css.map */
